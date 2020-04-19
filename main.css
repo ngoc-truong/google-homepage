@@ -1,0 +1,135 @@
+:root {
+    --text-color: #5f6368;
+    --google-blue: #1a73e8;
+}
+
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: 1fr 9fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+/*** Logo ***/
+
+#logo {
+    grid-column-start: 1;
+    width: 110px;
+    margin: 1em;
+}
+
+
+/*** Searchbar ***/
+#search-form #main-nav{
+    grid-column-start: 2;
+    background-color: blue;
+    width: 35em;
+    margin-top: 1em;
+}
+
+input[type=text] {
+    padding-left: 22px; 
+    font-size: 17px;
+}
+
+#search-field {
+    border-radius: 30px;
+    width: 48em;
+    height: 3em;
+    border: solid 1px #e2e4e8;
+    margin-top: 0.5em;
+    display: inline-block;
+}
+
+#search-field:hover {
+    box-shadow: 0 0 6px rgba(32,33,36,0.28)
+}
+
+#search-items {
+    width: 7em;
+    display: inline-block;
+    color: var(--text-color);
+    margin-left: -6em;
+}
+
+#search-items i {
+    padding-right: 1em;
+    font-size: 1.3em;
+}
+
+#search-button {
+    color: var(--google-blue);
+}
+
+/*** Main navigation ***/
+#main-nav {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    color: var(--text-color);
+}
+
+#main-nav ul {
+    padding: 0em;
+}
+
+#main-nav ul li {
+    display: inline;
+    padding: 0.8em;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+i {
+    padding-right: 0.45em;
+    font-size: 16px;
+}
+
+.highlighted {
+    border-bottom: solid 3px var(--google-blue);
+}
+
+.highlighted, .highlighted a{
+    color: var(--google-blue);
+}
+
+
+/*** Login buttons ***/
+#login-nav {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    width: 100%;
+    height: 100%;
+
+}
+
+#login {
+    color: white;
+    background-color: #1a73e8; 
+    width: 140px;
+    height: 45px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    margin-top: 0.55em;
+    margin-right: 0.55em;
+    float: right;
+}
+
+#login:hover {
+    background-color: #4485da;
+}
+
+#dots {
+    float:left;
+    padding-top: 0.8em;
+    padding-left: 2.4em;
+    padding-right: 0.8em;
+}
